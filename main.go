@@ -11,8 +11,6 @@ import (
 )
 
 func main() {
-	fmt.Println(`pop`)
-
 	router := mux.NewRouter()
 	router.HandleFunc("/rand", controllers.GetRandomPoem).Methods("GET")
 
