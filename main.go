@@ -12,6 +12,7 @@ import (
 
 func main() {
 	router := mux.NewRouter()
+	router.HandleFunc("/", controllers.DisplayAPI).Methods("GET")
 	router.HandleFunc("/rand", controllers.GetRandomPoem).Methods("GET")
 
 	port := os.Getenv("PORT")

@@ -13,3 +13,8 @@ func Respond(w http.ResponseWriter, data map[string]interface{}) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(data)
 }
+
+func RespondHtml(w http.ResponseWriter, body string) {
+	w.Header().Add("Content-Type", "text/html")
+	w.Write([]byte(body))
+}
