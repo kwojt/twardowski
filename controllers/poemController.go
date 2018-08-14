@@ -1,9 +1,10 @@
-package controller
+package controllers
 
 import (
 	"net/http"
-	tc "twardowski/commons"
-	ts "twardowski/services"
+
+	tc "github.com/kwojt/twardowski/commons"
+	ts "github.com/kwojt/twardowski/services"
 )
 
 func GetRandomPoem(w http.ResponseWriter, r *http.Request) {

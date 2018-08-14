@@ -5,7 +5,8 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"time"
-	tc "twardowski/commons"
+
+	tc "github.com/kwojt/twardowski/commons"
 )
 
 const poemFilePath = "data.json"
